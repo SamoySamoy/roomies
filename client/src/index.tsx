@@ -19,6 +19,7 @@ import {
   ResetPage,
   InvitePage,
   NotMemberPage,
+  AdminDashboardPage,
 } from '@/pages';
 import {
   LandingLayout,
@@ -60,6 +61,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                   </Route>
                 </Route>
                 <Route path='invite/:inviteCode' Component={InvitePage} />
+                <Route path='admin' Component={AdminDashboardPage} />
               </Route>
 
               {/* Require No Auth */}
