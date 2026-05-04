@@ -14,3 +14,4 @@ export { default as ErrorPage } from './ErrorPage';
 export { default as NotMemberPage } from './NotMemberPage';
 export { default as VideoPage } from './VideoPage';
 export { default as MeetingPageUI } from './MeetingPageUI';
+export { default as AdminDashboardPage } from './AdminDashboardPage';

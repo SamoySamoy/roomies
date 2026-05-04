@@ -1,4 +1,4 @@
-import { Plus, Compass, LogOut, Home, Users, LinkIcon } from 'lucide-react';
+import { Plus, Compass, LogOut, Home, Users, LinkIcon, LayoutDashboard } from 'lucide-react';
 import ActionTooltip from '@/components/ActionToolTip';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLogoutMutation } from '@/hooks/mutations';
@@ -91,6 +91,27 @@ export const CreateRoomButton = () => {
             <Plus className='text-lime-600 transition group-hover:text-white' size={25} />
           </div>
         </button>
+      </ActionTooltip>
+    </div>
+  );
+};
+
+
+export const AdminDashboardButton = () => {
+  return (
+    <div>
+      <ActionTooltip
+        side='right'
+        align='center'
+        label={<p className='text-sm font-bold'>Admin dashboard</p>}
+      >
+        <Link to={'/admin'}>
+          <button className='group flex items-center'>
+            <div className='mx-3 flex h-[48px] w-[48px] items-center justify-center overflow-hidden rounded-[24px] bg-background transition-all group-hover:rounded-[16px] group-hover:bg-violet-500 dark:bg-neutral-700'>
+              <LayoutDashboard className='text-violet-500 transition group-hover:text-white' size={25} />
+            </div>
+          </button>
+        </Link>
       </ActionTooltip>
     </div>
   );

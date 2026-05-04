@@ -7,6 +7,7 @@ import {
   ExploreButton,
   HomeButton,
   InviteButton,
+  AdminDashboardButton,
   LogoutButton,
   ProfileButton,
 } from '@/components/Sidebar/SidebarButton';
@@ -23,6 +24,7 @@ const NavigationSidebar = ({ rooms }: Props) => {
       <ExploreButton />
       <CreateRoomButton />
       <InviteButton />
+      <AdminDashboardButton />
       <Separator className='mx-auto h-[2px] w-10 rounded-md bg-zinc-300 dark:bg-zinc-700' />
       <ScrollArea className='w-full flex-1'>
         {rooms.map(room => (
